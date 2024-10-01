@@ -11,11 +11,12 @@ module.exports = {
         slpash_background: '#DAAF69',
         background: '#FFFFFF',
         cta_hero_home: '#2D604A',
-        cta_share_button: '#EB9B08',
+        cta_share_button: '#DAAF69',
         cta_link: '#DAAF69',
         cta_navbar_active: '#DAAF69',
         cta_navbar_inctive: '#333333',
-        text_primary: '#333333'
+        txt_active: '#DAAF69',
+        txt_primary: '#333333'
     },
       fontFamily: {
         serif: ['Noto Serif TC', 'serif'],
