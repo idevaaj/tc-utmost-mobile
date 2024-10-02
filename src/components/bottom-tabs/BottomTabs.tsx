@@ -5,6 +5,7 @@ import icons from "../../../constant/IconPath";
 import HomeScreen from "../pages/HomeScreen";
 import DevotionScreen from "../pages/DevotionScreen";
 import MoreScreen from "../pages/MoreScreen";
+import HomeStackNavigator from "../navigator/HomeStackNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -59,7 +60,7 @@ const BottomTabs: React.FC = () => {
         >
             <Tab.Screen 
                 name="首頁" 
-                component={HomeScreen} 
+                component={HomeStackNavigator} 
                 options={{
                     tabBarLabel: ({ focused }: { focused: boolean }) => (
                         <Text className={`${focused ? 'text-txt_active' : 'text-txt_primary'}`}>首頁</Text>
