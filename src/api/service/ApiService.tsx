@@ -6,7 +6,7 @@ type Edition = string; // Adjust type as necessary for selectedEdition
 type DateString = string; // Adjust type as necessary for selectedDate
 type TodayDevotionResponse = any; // Define a proper interface/type based on the expected response structure
 
-export const apiService = {
+export const ApiService = {
     // Get today's devotional
     getTodayDevotion: async (selectedEdition: Edition, selectedDate: DateString): Promise<TodayDevotionResponse> => {
 
