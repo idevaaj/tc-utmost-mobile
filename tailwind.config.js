@@ -13,6 +13,7 @@ module.exports = {
         cta_hero_home: '#2D604A',
         cta_share_button: '#DAAF69',
         cta_link: '#DAAF69',
+        cta_cancel: '#DAAF69',
         cta_navbar_active: '#DAAF69',
         cta_navbar_inctive: '#333333',
         txt_active: '#DAAF69',
