@@ -31,7 +31,7 @@ interface HomeData {
 // Define the navigation type
 type RootStackParamList = {
     Home: undefined; 
-    Devotion: { screen: string }; 
+    Devotion: { screen: string };
 };
 
 const HomeScreen: React.FC = () => {
@@ -119,7 +119,7 @@ const HomeScreen: React.FC = () => {
                     <Divider color='bg-[#F5F5F5]' />
                     <HomeQuoteComponent quoteComponentData={homeData?.pageModel.quotes || []} />
                     <Divider color='bg-[#F5F5F5]' />
-                    <HomeAboutComponent homeAboutData={homeData?.pageModel.homeAbout} />
+                    <HomeAboutComponent homeAboutData={homeData?.pageModel.homeAbout}/>
                 </View>
             </ScrollView>
         </View>
