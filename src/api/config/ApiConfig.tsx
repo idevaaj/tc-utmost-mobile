@@ -4,6 +4,7 @@ export const ApiConfig = {
     COLLECTION_URL: 'https://apoptimizely.azurewebsites.net/api/devotional',
     DEFAULT_HEADERS: {
         'Content-Type': 'application/json',
-        'Accept-Language': 'zh-hant'
+        'Accept-Language': 'zh-hant',
+        'Cache-Control': 'no-cache'
     },
 }

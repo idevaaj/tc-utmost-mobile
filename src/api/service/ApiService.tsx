@@ -5,6 +5,7 @@ import { ApiRepository } from '../repository/ApiRepository';
 type Edition = string; // Adjust type as necessary for selectedEdition
 type DateString = string; // Adjust type as necessary for selectedDate
 type TodayDevotionResponse = any; // Define a proper interface/type based on the expected response structure
+type AboutLink = string;
 
 export const ApiService = {
     // Get today's devotional
@@ -30,6 +31,17 @@ export const ApiService = {
             return await ApiRepository.get(endpoint);
         } catch (error) {
             console.error('Error in apiService.getHomeScreenData:', error);
+            throw error;
+        }
+    },
+
+    //search content components
+    getAboutScreenData: async (href: AboutLink) => {
+        try {
+            const endpoint = `/content?contentUrl=${href}`;
+            return await ApiRepository.get(endpoint);
+        } catch (error) {
+            console.error('Error in apiService.getAboutScreenData:', error);
             throw error;
         }
     },
